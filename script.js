@@ -42,7 +42,9 @@ addbtn.addEventListener("click", (e) => {
     ticketcont.setAttribute("class", "ticket-cont");
     ticketcont.innerHTML = 
     
-        `<div class="ticket-color"></div><div class="ticket-id">Sample_id</div><div class="task-area">
+        `<div class="ticket-color"></div>
+        <div class="ticket-id">Sample_id</div>
+        <div class="task-area">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur,
             sit vitae. Iure, magnam ab.
         </div>`
@@ -55,3 +57,10 @@ addbtn.addEventListener("click", (e) => {
 
   }
 });
+
+
+//task need to be done-1 apply color filter in task
+// 2-on the top when we click priority color, we should only get the task having same priority..
+//implementation of remove button....when we clickon remove button and after that when we click on task , the task should be removed.
+//implementation of lock button, when we click on lock button
+
