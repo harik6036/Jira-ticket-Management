@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>JIRA TICKET CLONE</title>
+    
+  </head>
+  <body>
+    <div class="toolbox-container">
+      <!-- flatuicolours for colours -->
+
+      <div class="toolbox-priority-cont">
+        <div class="lightpink color"></div>
+        <div class="lightgreen color"></div>
+        <div class="lightblue color"></div>
+        <div class="black color"></div>
+      </div>
+
+      <div class="action-btn">
+        <div class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="remove-btn">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- this will be the place where ticket will be collected -->
+
+    <div class="main-cont">
+<!-- this is the place where we save the tickets -->
+
+    </div>
+
+    <div class="modal-cont">
+<!-- this is the dialog box which will be appear after we click on add button -->
+<!-- now this also contains two divisions one where we write our tasks(text-area).... and our priority colours. -->
+<textarea class="textarea-cont" spellcheck="false"> </textarea>
+
+<div class="priority-color-cont"> 
+    <div class="priority-color border" style="background-color:lightpink"></div>
+    <div class="priority-color"style="background-color:lightgreen"></div>
+    <div class="priority-color"style="background-color:lightblue"></div>
+    <div class="priority-color"style="background-color:black"></div>
+</div>
+</div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

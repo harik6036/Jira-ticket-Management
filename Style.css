@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+
+
+}
+
+.toolbox-container{
+
+    height: 5rem;
+    /* //we dont have to put width in this because it is a div element.....it is bock scoped..... */
+background-color: #2c3e50; 
+/* change the above colour into some dark colour */
+display: flex;
+align-items: center;
+
+}
+
+.toolbox-priority-cont{
+
+     height:3.5rem;
+     width:15rem;
+background-color: darkgray;
+display: flex;
+justify-content: space-around ;
+align-items: center;
+border-radius:2px ;
+
+}
+.toolbox-container>*{
+    margin-left: 4rem;
+    border-radius: 2px; 
+}
+
+.action-btn{
+    height:3.5rem;
+    width:8rem;
+    background-color: rgb(229, 200, 200);
+    display: flex;
+    /* change the colour into dark colour */
+
+}
+
+.action-btn>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.color{
+
+    height: 1.5rem;
+width:2.5rem;
+background-color: blue;
+/* change the above color into light colour */
+border-radius: 2px;
+
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+
+}
+
+.lightblue{
+
+    background-color: lightblue;
+
+}
+
+.black{
+    background-color: black;
+}
+
+.action-btn>*:hover{
+    background-color: lightpink;
+}
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+background-color: blue;
+position: absolute;
+top: calc((100vh - 50vh)/2);  
+left:calc((100vw - 45vw )/2);
+
+display: none ;
+
+
+}
+
+.textarea-cont{
+
+    height: 100%;
+width: 75%;
+border: none;
+outline: none;
+/* text area is also can be used to resize as we write....therefore we  need to stop it */
+resize: none;
+background-color: lightblue;
+padding: 2rem;
+font-size: 2.5rem ;
+/* font-weight: bold; */
+
+}
+.priority-color-cont{
+    height: 100% ;
+    width: 25%;
+    background-color: #595f64;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.priority-color{
+    height: 3.5rem;
+    width: 60%;
+    background-color: aquamarine;
+}
+
+.border{
+    border: 5px solid #d1d8e0;
+}
+
+.ticket-cont{
+
+    height: 12rem;
+    width: 17rem;
+background-color: lightblue ;
+/* padding: 2rem;
+ */
+ margin: 2rem;
+}
+
+.ticket-color{
+    height: 1rem;
+    background-color: lightpink;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: lightgreen;
+padding: 0.4rem;    
+}
+
+.task-area{
+height: calc(100% - 1rem - 2rem);
+background-color: bisque;
+padding: 1rem;
+
+}
+
+.main-cont{
+    display: flex;
+flex-wrap: wrap;
+}
