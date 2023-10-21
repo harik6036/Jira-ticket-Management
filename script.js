@@ -107,14 +107,37 @@ function handlecolor(ticket){
 //  console.log(ModalPrioritycolor) 
 // console.log(ticket.getAttribute("background-style"));
 let ticketColor2=ticket.querySelector(".ticket-color");
-ticketColor2.addEventListener("dbclick",()=>{
+ticketColor2.addEventListener('click',()=>{
 
-colors.forEach((value)=>{
-    if(value==ModalPrioritycolor){
+    for(let i=0;i<colors.length;i++)
+
+    {
+        let idx=0;
+ 
         
-    }
-});    
-    
+
+        if(ModalPrioritycolor==colors[i])
+        {
+            // i=i%colors.length;
+           
+           
+            ModalPrioritycolor=colors[i+1];
+            let newcolor= ticket.ticketColor=ModalPrioritycolor;
+            // console.log(ticket.ticketColor)
+        //    console.log(ticket.ticketcont);
+        ticketColor2.style.backgroundColor=ModalPrioritycolor;
+        
+            // console.log(newcolor);
+            // console.log(ticketColor2.style.backgroundColor);
+            break;
+
+
+
+        }
+        idx=idx++;
+
+
+    }  
 
     
     
