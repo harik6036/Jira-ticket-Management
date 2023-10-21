@@ -135,9 +135,9 @@ font-size: 2.5rem ;
 
 .ticket-cont{
 
-    height: 12rem;
+    height: 13rem;
     width: 17rem;
-background-color: lightblue ;
+/* background-color: lightblue ; */
 /* padding: 2rem;
  */
  margin: 2rem;
@@ -150,18 +150,29 @@ background-color: lightblue ;
 
 .ticket-id{
     height: 2rem;
-    background-color: lightgreen;
+    background-color:#7bba7b;
 padding: 0.4rem;    
 }
 
 .task-area{
-height: calc(100% - 1rem - 2rem);
+height: calc(100% - 1rem - 2rem - 2rem);
 background-color: bisque;
 padding: 1rem;
+outline : none;
 
 }
 
 .main-cont{
     display: flex;
 flex-wrap: wrap;
+}
+.lock-button{
+    height: 2rem;
+    background-color: #9dc7b38f;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem
+    /* padding-top: 0.3rem; */
+
 }
